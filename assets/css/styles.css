@@ -101,7 +101,38 @@ li {
     background-color: teal;
     color: white; /* Adjust text color for better contrast */
 }
+.skill-logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: contain;
+    margin: auto;
+    padding: 10px;
+}
 
+.profile-image {
+    width: 350px; /* Set the desired size */
+    height: 350px; /* Ensure height matches width for a perfect circle */
+    object-fit: fit; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .profile-image {
+      width: 250px; /* Smaller size for smaller screens */
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .profile-image {
+      width: 200px; /* Even smaller size for mobile devices */
+      height: 200px;
+    }
+  }
 
 #footer {
     background-color: teal;
